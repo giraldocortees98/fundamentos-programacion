@@ -1347,7 +1347,7 @@ Para llegar al segundo nivel, el código debe ser:
 code(r"""
 # Ejemplo: función que genera el resumen ejecutivo para cualquier ciudad
 def perfil_ciudad(df, ciudad):
-    """Devuelve un dict con el perfil completo de una ciudad."""
+    '''Devuelve un dict con el perfil completo de una ciudad.'''
     sub = df[df["ciudad"] == ciudad]
     if sub.empty:
         return None

@@ -107,7 +107,7 @@ una etiqueta según su monto.
 
 code(r"""
 def clasificar_transaccion(monto):
-    """Clasifica el monto: bajo / medio / alto."""
+    '''Clasifica el monto: bajo / medio / alto.'''
     if monto > 200000:
         return "alto"
     elif monto > 50000:
@@ -143,7 +143,7 @@ Usaremos `if/elif/else` para aplicar la regla correcta.
 
 code(r"""
 def calcular_comision(monto, metodo_pago):
-    """Calcula la comisión del procesador de pagos."""
+    '''Calcula la comisión del procesador de pagos.'''
     if metodo_pago == "efectivo":
         return 0
     elif metodo_pago == "tarjeta":

@@ -1024,7 +1024,7 @@ de decisiones escalonadas se llama **branching en cascada**.
 
 code(r"""
 def calcular_precio_final(precio_original):
-    """Aplica descuento escalonado según el monto."""
+    '''Aplica descuento escalonado según el monto.'''
     if precio_original > 500000:
         pct = 0.15
     elif precio_original > 200000:
@@ -1061,7 +1061,7 @@ no bisiesto) y 2000 (divisible por 400 → bisiesto).
 
 code(r"""
 def es_bisiesto(anio):
-    """Determina si un año es bisiesto según las reglas del calendario gregoriano."""
+    '''Determina si un año es bisiesto según las reglas del calendario gregoriano.'''
     if anio % 400 == 0:
         return True
     elif anio % 100 == 0:
@@ -1581,7 +1581,7 @@ code(r"""
 # None en el contexto de una función que puede fallar.
 
 def dividir_seguro(a, b):
-    """Devuelve a/b, o None si b es cero."""
+    '''Devuelve a/b, o None si b es cero.'''
     if b == 0:
         return None    # señal explícita de 'no se puede calcular'
     return a / b
@@ -1649,7 +1649,7 @@ IMC = peso_kg / altura_m²
 
 code(r"""
 def clasificar_imc(peso_kg, altura_m):
-    """Calcula e interpreta el IMC."""
+    '''Calcula e interpreta el IMC.'''
     if altura_m <= 0:
         return None, "Error: altura debe ser positiva"
     imc = peso_kg / (altura_m ** 2)
@@ -1688,7 +1688,7 @@ Celsius a Kelvin:      K = C + 273.15
 
 code(r"""
 def convertir_temperatura(celsius):
-    """Convierte Celsius a Fahrenheit y Kelvin."""
+    '''Convierte Celsius a Fahrenheit y Kelvin.'''
     fahrenheit = celsius * (9 / 5) + 32
     kelvin     = celsius + 273.15
     return fahrenheit, kelvin
